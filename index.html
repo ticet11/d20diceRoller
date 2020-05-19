@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="css/style.css">
+        <title>d20 Roller</title>
+    </head>
+    <body onload="diceRoll()">
+        <div class="container">
+            <div class="header">
+                <h1>d20 Roller</h1>
+            </div>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Dice Game</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+            <!-- place to tell the player what they rolled -->
+            <p>Roll the dice!</p>
 
-<body onload="diceRoll()">
-	<div class="container">
-
-		<h1>d20 Roller</h1>
-
-		<!-- place to tell the player what they rolled -->
-		<p>Roll the dice!</p>
-
-		<img class="d20" name="d20"/>
-
-	</div>
-	<div class="container">
-		<button type="button" onclick="clickRoll()">Roll Dice</button>
-	</div>
-	<script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
-	<footer>
-		&copy; Brian Kozub, 2019
-	</footer>
-</body>
-
+            <img class="d20" name="d20" />
+        </div>
+        <div class="container">
+            <button type="button" onclick="clickRoll()">
+                Roll Dice
+            </button>
+        </div>
+        <script
+            src="js/index.js"
+            type="text/javascript"
+            charset="utf-8"
+            async
+            defer
+        ></script>
+        <footer>
+            &copy; Brian Kozub, 2020
+        </footer>
+    </body>
 </html>
